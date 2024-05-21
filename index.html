@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codIt - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .coding-section, .signin-section, .account-section, .trial-section, .creator-hub-section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .coding-section h2, .signin-section h2, .account-section h2, .trial-section h2, .creator-hub-section h2 {
+            margin-top: 0;
+        }
+        .coding-section pre {
+            background-color: #f5f5f5;
+            border-left: 5px solid #333;
+            padding: 10px;
+            overflow: auto;
+        }
+        .coding-section code {
+            display: block;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .signin-section form, .account-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .signin-section input, .account-section input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .signin-section button, .account-section button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .coding-section textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .coding-section button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .creator-hub-section .game {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .creator-hub-section .game h3 {
+            margin-top: 0;
+        }
+        .creator-hub-section .game p {
+            margin-bottom: 5px;
+        }
+        .creator-hub-section .game button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>codIt</h1>
+    </header>
+    <nav>
+        <a href="#trial">Free Trial</a>
+        <a href="#signin">Sign In</a>
+        <a href="#about">About Me</a>
+        <a href="#account">Account</a>
+        <a href="#rating">Rating/Subscription</a>
+        <a href="#coding">Coding</a>
+        <a href="#creator-hub">Creator Hub</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="trial" class="trial-section">
+            <h2>Free Trial</h2>
+            <p>Before signing in, try out our free trial. During this period, you can explore our services and provide feedback. We value your opinion!</p>
+            <button onclick="window.location.href='#creator-hub'">Start Free Trial</button>
+        </section>
+        <section id="signin" class="signin-section">
+            <h2>Sign In</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" onclick="window.location.href='#creator-hub'">Sign In</button>
+            </form>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! My name is codIt. I am passionate about coding and creating innovative solutions. Here, you can find information about creating accounts, free trials, and more. Feel free to explore!</p>
+        </section>
+        <section id="account" class="account-section">
+            <h2>Account Creation</h2>
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="username" required>
+                <label for="new-email">Email:</label>
+                <input type
